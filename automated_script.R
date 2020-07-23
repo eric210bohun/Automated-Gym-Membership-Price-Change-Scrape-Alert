@@ -1,4 +1,4 @@
-# load libraries    
+- Can I alter this script to email an attachment plot of recent prices?# load libraries    
 library(tidyverse)
 library(rvest)
 library(RSelenium)
@@ -45,7 +45,7 @@ z <- print(gym_prices)
 # set up of email_eric
 email_eric <- envelope()
 email_eric <- email_eric %>% from("oedipusatcolonussheffield@gmail.com") %>% to("eric210bohun@gmail.com")
-email_eric <- email_eric %>% subject("The prices have changed or the wesites have- Can I alter this script to email an attachment plot of recent prices?")
+email_eric <- email_eric %>% subject("The prices have changed or the wesites have")
 email_eric <- email_eric %>% text("The prices or websites have changed - check out the attachment and look at the RStudio log")
 email_eric <- email_eric %>% attachment("/home/eric/projects/gym_checker/gym_prices.RData")
 smtp <- server(host = "smtp.gmail.com",

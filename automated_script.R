@@ -51,6 +51,6 @@ email_eric <- email_eric %>% attachment("/home/eric/projects/gym_checker/gym_pri
 smtp <- server(host = "smtp.gmail.com",
                port = 465,
                username = "oedipusatcolonussheffield@gmail.com",
-               password = "FD5neta6bhSGVhZ")
+               password = "XXXXXXXX")
 # run email_eric if the prices have changed 
 if(is.na(y)==TRUE){smtp(email_eric, verbose = TRUE)}
